@@ -1,4 +1,3 @@
-# HW04
 # Whisper 模型文档
 
 ## 模型概述
@@ -96,3 +95,62 @@ Whisper 提供多个规模的模型：
 - [OpenAI Whisper GitHub](https://github.com/openai/whisper)
 - [Whisper 模型论文](https://cdn.openai.com/papers/whisper.pdf)
 - [OpenAI Whisper 博客](https://openai.com/blog/whisper)
+
+## Problems I Met and Solutions
+
+### Environment Issues
+1. **Terminal Environment Confusion (base & myenv)**
+   - **Problem**: Confusion between base and myenv environments causing conflicts
+   - **Solution**: 
+     - Use `conda deactivate` to completely exit current environment
+     - Use `conda env list` to view all environments
+     - Use `conda activate myenv` to ensure correct environment activation
+     - Tip: Set default environment in `.bashrc` or `.zshrc`
+
+2. **FFmpeg Dependency Missing**
+   - **Problem**: Initial run failed due to missing FFmpeg
+   - **Solution**:
+     ```bash
+     # For Mac users
+     brew install ffmpeg
+     
+     # For Ubuntu users
+     sudo apt update
+     sudo apt install ffmpeg
+     
+     # For Windows users
+     # Download from official website and configure environment variables
+     ```
+
+### Exploration and Findings
+
+#### Multilingual Audio Testing
+I explored Whisper model's multilingual recognition capabilities:
+
+1. **English Audio Test**
+   - Used CNN news clip for testing
+   - Model successfully recognized standard English pronunciation
+   - Accuracy rate above 95%
+   - Particularly effective with clear news broadcast audio
+
+2. **Chinese Audio Test**
+   - Used daily conversation recordings
+   - Model accurately recognized Mandarin Chinese
+   - Good comprehension of colloquial expressions
+   - Successfully processed recordings with moderate background noise
+
+#### Why Test Different Languages?
+1. **Verify Universality**:
+   - Whisper claims multilingual recognition support
+   - Need to verify performance in practical applications
+   - Confirm whether additional language configuration is needed
+
+2. **Practical Application Requirements**:
+   - Frequent need to process multilingual audio
+   - Understand model limitations in different language scenarios
+   - Provide basis for future project selection
+
+3. **Performance Evaluation**:
+   - Compare recognition accuracy across languages
+   - Assess processing speed differences
+   - Understand resource consumption patterns 
