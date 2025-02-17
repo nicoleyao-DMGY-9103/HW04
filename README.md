@@ -92,7 +92,3 @@ Whisper 提供多个规模的模型：
 - 批量处理大量音频文件
 - 根据具体需求选择合适的模型参数
 
-## 参考资源
-- [OpenAI Whisper GitHub](https://github.com/openai/whisper)
-- [Whisper 模型论文](https://cdn.openai.com/papers/whisper.pdf)
-- [OpenAI Whisper 博客](https://openai.com/blog/whisper)
