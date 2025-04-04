@@ -91,11 +91,6 @@ Whisper offers models of various sizes:
 - Batch Process Large Audio Files
 - Select Appropriate Model Parameters Based on Specific Needs
 
-## References
-- [OpenAI Whisper GitHub](https://github.com/openai/whisper)
-- [Whisper Model Paper](https://cdn.openai.com/papers/whisper.pdf)
-- [OpenAI Whisper Blog](https://openai.com/blog/whisper)
-
 ## Problems I Met and Solutions
 
 ### Environment Issues
